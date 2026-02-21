@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travor Junior Chiweshe | Web Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h2 class="logo">TC.</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <!-- Background -->
+        <img src="herobackground.png" alt="Hero Background" class="hero-bg">
+
+        <div class="hero-content">
+            <h1>Hi, I'm Travor 👋</h1>
+            <h2>Full Stack Web Developer</h2>
+
+            <!-- PROFILE IMAGE -->
+            <div class="hero-image">
+                <img src="profilephoto.png" alt="Travor Chiweshe">
+            </div>
+
+            <p>I build scalable web applications, simulation engines, and modern interactive experiences.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+    <script id="scroll-collapse">
+const hero = document.querySelector('.hero');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) { // user scrolled down 50px
+        hero.classList.add('collapsed');
+    } else {
+        hero.classList.remove('collapsed');
+    }
+});
+</script>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate web developer focused on building high-performance applications.
+            I specialize in React, Node.js, and scalable backend systems.
+            I love solving complex logic problems and building simulation engines.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section dark">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="devicon-html5-plain colored"></i>
+                <span>HTML5</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-css3-plain colored"></i>
+                <span>CSS3</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-javascript-plain colored"></i>
+                <span>JavaScript</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-react-original colored"></i>
+                <span>React</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span>Node.js</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-mongodb-plain colored"></i>
+                <span>MongoDB</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-git-plain colored"></i>
+                <span>Git</span>
+            </div>
+
+            <div class="skill-card">
+                <i class="devicon-github-original"></i>
+                <span>GitHub</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="projects-header">
+            <h2>Projects</h2>
+            <button id="toggleView" class="toggle-btn">Grid View</button>
+        </div>
+
+        <div id="projectsContainer" class="projects-grid">
+
+            <div class="project-card">
+                <h3>Custom Email App</h3>
+                <p>Secure email client with custom backend and real-time messaging.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Custom Email App</h3>
+                <p>Secure email client with custom backend and real-time messaging.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>3D Pool Scene</h3>
+                <p>WebGL-based 3D interactive pool environment.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Football Simulation Engine</h3>
+                <p>Real-time simulation engine with odds and betting logic.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>2D Pool Game</h3>
+                <p>Physics-based cue prediction and gameplay logic.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section dark">
+        <h2>Contact Me</h2>
+
+        <div class="contact-container">
+
+            <!-- LEFT COLUMN -->
+            <div class="contact-info">
+                <p><strong>Email:</strong></p>
+                <a href="mailto:devCloutKildren@email.com">
+                    devCloutKildren@email.com
+                </a>
+
+                <p><strong>GitHub:</strong></p>
+                <a href="https://github.com/yourusername" target="_blank">
+                    github.com/yourusername
+                </a>
+            </div>
+
+            <!-- RIGHT COLUMN -->
+            <div class="social-links">
+                <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="https://wa.me/2637XXXXXXX" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Travor Chiweshe. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
