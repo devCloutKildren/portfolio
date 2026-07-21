@@ -3,268 +3,1401 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Travor Junior Chiweshe | Web Developer</title>
+    <title>Travor Chiweshe | Full Stack Engineer AI Platform Developer</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Travor Chiweshe - Full Stack Engineer, AI Platform Developer, Cloud Software Architect and Founder of DevClout Digital Systems.">
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <script src="script.js" defer></script>
+
 </head>
+
 
 <body>
 
-    <header class="navbar">
-        <h2 class="logo">TC</h2>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <!-- Background -->
-        <img src="herobackground.png" alt="Hero Background" class="hero-bg">
+<div class="background-grid"></div>
 
-        <div class="hero-content">
-            <h1>Hi, I'm Travor 👋</h1>
-            <h2>Full Stack Web Developer</h2>
 
-            <!-- PROFILE IMAGE -->
-            <div class="hero-image">
-                <img src="profilephoto.png" alt="Travor Chiweshe">
-            </div>
 
-            <p>I build scalable web applications, simulation engines, and modern interactive experiences.</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </section>
-    <script id="scroll-collapse">
-        const hero = document.querySelector('.hero');
+<header class="navbar">
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 60) { // user scrolled down 50px
-                hero.classList.add('collapsed');
-            } else {
-                hero.classList.remove('collapsed');
-            }
-        });
-    </script>
+    <h2 class="logo">TC</h2>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            I'm a passionate web developer focused on building high-performance applications.
-            I specialize in React, Node.js, and scalable backend systems.
-            I love solving complex logic problems and building simulation engines.
-        </p>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section dark">
-        <h2>Technical Skills</h2>
-        <div class="skills-grid">
+    <nav>
 
-            <div class="skill-card">
-                <i class="devicon-html5-plain colored"></i>
-                <span>HTML5</span>
-            </div>
+        <a href="#about">About</a>
 
-            <div class="skill-card">
-                <i class="devicon-css3-plain colored"></i>
-                <span>CSS3</span>
-            </div>
+        <a href="#skills">Skills</a>
 
-            <div class="skill-card">
-                <i class="devicon-javascript-plain colored"></i>
-                <span>JavaScript</span>
-            </div>
+        <a href="#experience">Experience</a>
 
-            <div class="skill-card">
-                <i class="devicon-react-original colored"></i>
-                <span>React</span>
-            </div>
+        <a href="#projects">Projects</a>
 
-            <div class="skill-card">
-                <i class="devicon-nodejs-plain colored"></i>
-                <span>Node.js</span>
-            </div>
+        <a href="#contact">Contact</a>
 
-            <div class="skill-card">
-                <i class="devicon-mongodb-plain colored"></i>
-                <span>MongoDB</span>
-            </div>
+    </nav>
 
-            <div class="skill-card">
-                <i class="devicon-git-plain colored"></i>
-                <span>Git</span>
-            </div>
 
-            <div class="skill-card">
-                <i class="devicon-github-original"></i>
-                <span>GitHub</span>
-            </div>
+</header>
 
-            <div class="skill-card">
-                <!-- Blender icon -->
-                <i class="devicon-blender-plain"></i>
-                <span>Blender</span>
-            </div>
 
-        </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-        <div class="projects-header">
-            <h2>Projects</h2>
-            <button id="toggleView" class="toggle-btn">Grid View</button>
-        </div>
 
-        <div id="projectsContainer" class="projects-grid">
 
-            <!-- E-commerce Web App -->
-            <div class="project-card">
-                <h3>E-commerce Web App</h3>
-                <p>Online event tickets purchase platform with sales tracking.</p>
-                <div class="project-footer">
-                   <a href="https://e-ticketa.netlify.app/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-                    <div class="project-skills">
-                        <i class="devicon-tailwindcss-plain colored" title="Tailwind CSS"></i>
-                        <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-                        <i class="devicon-netlify-plain colored" title="Netlify"></i>
-                    </div>
-                </div>
-            </div>
+<!-- HERO SECTION -->
 
-            <!-- Custom Email App -->
-            <div class="project-card">
-                <h3>Custom Email App</h3>
-                <p>Secure email client with custom backend and Cisco security.</p>
-                <div class="project-footer">
-                    <a href="#" class="project-link">View Project</a>
-                    <div class="project-skills">
-                        <i class="devicon-express-original colored" title="Express.js"></i>
-                        <i class="devicon-cisco-plain colored" title="Cisco Security"></i>
-                    </div>
-                </div>
-            </div>
+<section class="hero">
 
-            <!-- 3D Pool Scene -->
-            <div class="project-card">
-                <h3>3D Pool Scene</h3>
-                <p>WebGL-based 3D interactive pool environment.</p>
-                <div class="project-footer">
-                    <a href="#" class="project-link">View Project</a>
-                    <div class="project-skills">
-                        <i class="devicon-threejs-original colored" title="Three.js"></i>
-                        <i class="devicon-blender-plain colored" title="Blender"></i>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Football Simulation Engine -->
-            <div class="project-card">
-                <h3>Football Simulation Engine</h3>
-                <p>Real-time simulation engine with odds and betting logic.</p>
-                <div class="project-footer">
-                    <a href="#" class="project-link">View Project</a>
-                    <div class="project-skills">
-                        <i class="devicon-html5-plain colored" title="HTML5"></i>
-                        <i class="devicon-javascript-plain colored" title="JavaScript"></i>
-                        <i class="devicon-mongodb-plain colored" title="MongoDB"></i>
-                    </div>
-                </div>
-            </div>
+<img src="herobackground.png"
+     alt="Technology Background"
+     class="hero-bg">
 
-            <!-- 2D Pool Game -->
-            <div class="project-card">
-                <h3>2D Pool Game</h3>
-                <p>Physics-based cue prediction and gameplay logic.</p>
-                <div class="project-footer">
-                 <a href="https://devcloutkildren.github.io/2D-pool-game/" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
-                    <div class="project-skills">
-                        <i class="devicon-html5-plain colored" title="HTML5"></i>
-                        <i class="devicon-css3-plain colored" title="CSS3"></i>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section dark">
-        <h2>Contact Me</h2>
+<div class="hero-content">
 
-        <div class="contact-container">
 
-          <!-- LEFT COLUMN -->
+<h1>
+    Hi, I'm Travor 👋
+</h1>
+
+
+<h2>
+    Full Stack Engineer |
+    AI Platform Developer |
+    Cloud Software Architect
+</h2>
+
+
+
+<div class="hero-image">
+
+<img src="profilephoto.png"
+     alt="Travor Chiweshe">
+
+</div>
+
+
+
+
+<p>
+
+I design scalable software ecosystems,
+AI-ready platforms,
+cloud applications,
+and enterprise digital solutions.
+
+</p>
+
+
+
+<a href="#projects"
+   class="btn">
+
+View My Work
+
+</a>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<script id="scroll-collapse">
+
+const hero = document.querySelector('.hero');
+
+
+window.addEventListener('scroll',()=>{
+
+    if(window.scrollY > 60){
+
+        hero.classList.add('collapsed');
+
+    }
+
+    else{
+
+        hero.classList.remove('collapsed');
+
+    }
+
+
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about"
+class="section">
+
+
+<h2>
+About Me
+</h2>
+
+
+
+<p>
+
+Hello, my name is Travor Chiweshe.
+
+I am a Zimbabwean software engineer based in Harare,
+specializing in full-stack development,
+AI-driven platforms,
+cloud software architecture,
+and scalable digital ecosystems.
+
+Through building platforms such as
+<strong>DevClout Digital Systems</strong>
+and the
+<strong>NextWave E-Ticketing Platform</strong>,
+I have gained practical experience designing
+production-ready applications,
+backend systems,
+automation workflows,
+document intelligence solutions,
+and cloud deployed software platforms.
+
+My goal is to build intelligent technology solutions
+that create meaningful impact,
+especially across emerging markets in Africa.
+
+</p>
+
+
+
+
+<div class="professional-summary">
+
+
+<h3>
+Professional Summary
+</h3>
+
+
+<p>
+
+Software engineer and founder of DevClout Digital Systems
+specializing in scalable enterprise platforms,
+AI-ready systems,
+backend architecture,
+automation workflows,
+document processing,
+and modern cloud applications.
+
+Experienced in designing complete products from concept
+to production deployment using modern full-stack technologies.
+
+</p>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- SKILLS SECTION -->
+
+
+<section id="skills"
+class="section dark">
+
+
+
+<h2>
+Technical Skills
+</h2>
+
+
+
+
+<div class="skills-grid">
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-javascript-plain colored"></i>
+
+<span>
+JavaScript
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-typescript-plain colored"></i>
+
+<span>
+TypeScript
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-react-original colored"></i>
+
+<span>
+React
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-nodejs-plain colored"></i>
+
+<span>
+Node.js
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-express-original colored"></i>
+
+<span>
+Express.js
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-mongodb-plain colored"></i>
+
+<span>
+MongoDB
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-tailwindcss-plain colored"></i>
+
+<span>
+Tailwind CSS
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-vitejs-plain colored"></i>
+
+<span>
+Vite
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-amazonwebservices-original colored"></i>
+
+<span>
+AWS Cloud
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-linux-plain"></i>
+
+<span>
+Linux Administration
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-git-plain colored"></i>
+
+<span>
+Git
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-github-original"></i>
+
+<span>
+GitHub
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-html5-plain colored"></i>
+
+<span>
+HTML5
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-css3-plain colored"></i>
+
+<span>
+CSS3
+</span>
+
+</div>
+
+
+
+
+
+
+<div class="skill-card">
+
+<i class="devicon-python-plain colored"></i>
+
+<span>
+Python AI Development
+</span>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<div class="skills-description">
+
+
+<h3>
+AI & Cloud Engineering
+</h3>
+
+
+<p>
+
+AI Platform Architecture,
+AI Product Development,
+Intelligent Document Processing,
+LLM Integration Concepts,
+Automation Workflows,
+REST API Architecture,
+Authentication Systems,
+JWT Security,
+RBAC,
+Cloud Deployment,
+Production Infrastructure,
+and Enterprise Application Design.
+
+</p>
+
+
+</div>
+
+
+
+</section>
+<!-- EXPERIENCE SECTION -->
+
+<section id="experience" class="section">
+
+
+<h2>
+Professional Experience
+</h2>
+
+
+
+<div class="project-card">
+
+
+<h3>
+DevClout Digital Systems (Pvt) Ltd
+</h3>
+
+
+<h4>
+Founder / Lead Software Engineer
+</h4>
+
+
+<p>
+2024 - Present
+</p>
+
+
+
+<p>
+
+Founder and lead engineer responsible for designing and developing
+enterprise software ecosystems, scalable applications,
+cloud infrastructure, and digital workflow platforms.
+
+</p>
+
+
+
+<ul>
+
+<li>
+Designed enterprise software architecture supporting multiple applications
+</li>
+
+
+<li>
+Built reusable authentication, document, UI and workflow systems
+</li>
+
+
+<li>
+Developed NextWave E-Ticketing Platform
+</li>
+
+
+<li>
+Created cloud deployed production applications using AWS infrastructure
+</li>
+
+
+<li>
+Implemented document verification workflows and PDF generation systems
+</li>
+
+
+<li>
+Designed modular systems for business automation and digital transformation
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- PROJECTS -->
+
+<section id="projects"
+class="section">
+
+
+
+<div class="projects-header">
+
+
+<h2>
+Projects
+</h2>
+
+
+<button id="toggleView"
+class="toggle-btn">
+
+Grid View
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div id="projectsContainer"
+class="projects-grid">
+
+
+
+
+
+
+
+
+<!-- NEXTWAVE -->
+
+
+<div class="project-card">
+
+
+<h3>
+NextWave E-Ticketing Platform
+</h3>
+
+
+<h4>
+Multi-sided Marketplace Platform
+</h4>
+
+
+
+<p>
+
+A complete digital event ecosystem connecting organizers,
+attendees, entrepreneurs, vendors, and professional service
+providers through one unified platform.
+
+</p>
+
+
+
+
+<p>
+
+The platform combines event management,
+digital ticketing,
+marketplace discovery,
+community engagement,
+and service coordination.
+
+</p>
+
+
+
+<ul>
+
+<li>
+Event organizer management
+</li>
+
+<li>
+Digital ticket creation and sales
+</li>
+
+<li>
+QR based ticket verification
+</li>
+
+<li>
+Ticket marketplace infrastructure
+</li>
+
+<li>
+Organizer analytics dashboards
+</li>
+
+<li>
+Real-time communication systems
+</li>
+
+<li>
+Event service marketplace
+</li>
+
+<li>
+Vendor and entrepreneur discovery
+</li>
+
+</ul>
+
+
+
+
+<div class="project-footer">
+
+
+<a href="https://www.nextwave.co.zw"
+target="_blank"
+class="project-link">
+
+View Project
+
+</a>
+
+
+
+<div class="project-skills">
+
+<i class="devicon-react-original colored"></i>
+
+<i class="devicon-nodejs-plain colored"></i>
+
+<i class="devicon-mongodb-plain colored"></i>
+
+<i class="devicon-amazonwebservices-original colored"></i>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- DEVCLOUT -->
+
+
+<div class="project-card">
+
+
+<h3>
+DevClout Enterprise Ecosystem
+</h3>
+
+
+<h4>
+Enterprise Software Platform
+</h4>
+
+
+
+
+<p>
+
+A modular enterprise technology ecosystem providing
+digital document management,
+developer tools,
+administration systems,
+investor relations,
+and workflow automation.
+
+</p>
+
+
+
+<ul>
+
+<li>
+Enterprise administration platform
+</li>
+
+<li>
+Digital document management
+</li>
+
+<li>
+Verification registry workflows
+</li>
+
+<li>
+Digital signatures
+</li>
+
+<li>
+Role based access control
+</li>
+
+<li>
+Reusable software components
+</li>
+
+<li>
+Business workflow automation
+</li>
+
+
+</ul>
+
+
+
+
+
+<div class="project-footer">
+
+
+<a href="https://www.devcloutsystems.com"
+target="_blank"
+class="project-link">
+
+View Project
+
+</a>
+
+
+
+<div class="project-skills">
+
+
+<i class="devicon-react-original colored"></i>
+
+<i class="devicon-nodejs-plain colored"></i>
+
+<i class="devicon-mongodb-plain colored"></i>
+
+<i class="devicon-linux-plain"></i>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 3D PROJECT -->
+
+
+<div class="project-card">
+
+
+<h3>
+3D Interactive Pool Scene
+</h3>
+
+
+<p>
+
+WebGL based interactive 3D environment developed using
+Three.js and Blender assets.
+
+</p>
+
+
+
+<div class="project-footer">
+
+
+<a href="#"
+class="project-link">
+
+View Project
+
+</a>
+
+
+
+<div class="project-skills">
+
+
+<i class="devicon-threejs-original colored"></i>
+
+<i class="devicon-blender-plain"></i>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 2D GAME -->
+
+
+<div class="project-card">
+
+
+<h3>
+2D Pool Game Engine
+</h3>
+
+
+<p>
+
+Physics-based gameplay system featuring cue prediction,
+collision logic,
+and interactive mechanics.
+
+</p>
+
+
+
+
+<div class="project-footer">
+
+
+<a href="https://devcloutkildren.github.io/2D-pool-game/"
+target="_blank"
+class="project-link">
+
+View Project
+
+</a>
+
+
+<div class="project-skills">
+
+
+<i class="devicon-html5-plain colored"></i>
+
+<i class="devicon-css3-plain colored"></i>
+
+<i class="devicon-javascript-plain colored"></i>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- AI FOCUS -->
+
+
+<section class="section dark">
+
+
+<h2>
+AI Engineering Focus
+</h2>
+
+
+
+<div class="project-card">
+
+
+<p>
+
+Focused on building intelligent systems through:
+
+</p>
+
+
+
+<ul>
+
+<li>
+Artificial Intelligence Applications in Africa
+</li>
+
+
+<li>
+Enterprise AI Solutions
+</li>
+
+
+<li>
+Intelligent Business Automation
+</li>
+
+
+<li>
+AI Assisted Software Engineering
+</li>
+
+
+<li>
+Document Intelligence Platforms
+</li>
+
+
+<li>
+LLM Integration Concepts
+</li>
+
+
+</ul>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- EDUCATION -->
+
+
+<section class="section">
+
+
+<h2>
+Education
+</h2>
+
+
+
+<div class="project-card">
+
+
+<h3>
+Bachelor of Computer Science (Engineering Studies)
+</h3>
+
+
+
+<p>
+
+<strong>
+Vistula University, Warsaw, Poland
+</strong>
+
+</p>
+
+
+
+<p>
+2020 - 2024
+</p>
+
+
+
+
+<p>
+
+Computer Science specialization including
+Cybersecurity and Computer Networks Engineering.
+
+</p>
+
+
+
+
+<ul>
+
+
+<li>
+173 ECTS Credits
+</li>
+
+
+<li>
+325-hour Professional Industry Training
+</li>
+
+
+<li>
+Software Engineering
+</li>
+
+
+<li>
+Python for Data Science and Artificial Intelligence
+</li>
+
+
+<li>
+Cloud Technologies
+</li>
+
+
+<li>
+Distributed Computer Systems
+</li>
+
+
+<li>
+Database Systems
+</li>
+
+
+<li>
+Network Security
+</li>
+
+
+</ul>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- CONTACT -->
+
+<section id="contact"
+class="section dark">
+
+
+
+<h2>
+Contact Me
+</h2>
+
+
+
+<div class="contact-container">
+
+
+
+
+
 <div class="contact-info">
 
-    <p><strong>Phone:</strong></p>
-    <p>+263 771 579 251</p>
 
-    <p><strong>Email:</strong></p>
-    <a href="mailto:devCloutKidren@gmail.com"> 
-        devCloutKidren@gmail.com 
-    </a>
 
-    <p><strong>GitHub:</strong></p>
-    <a href="https://github.com/devCloutKildren" target="_blank" rel="noopener noreferrer">
-        github.com/devCloutKildren
-    </a>
+<p>
+<strong>
+Phone:
+</strong>
+</p>
+
+
+<p>
++263 771 579 251
+</p>
+
+
+
+
+
+<p>
+<strong>
+Email:
+</strong>
+</p>
+
+
+<a href="mailto:devcloutkidren@gmail.com">
+
+devcloutkidren@gmail.com
+
+</a>
+
+
+
+
+<p>
+<strong>
+Portfolio:
+</strong>
+</p>
+
+
+<a href="https://www.devcloutsystems.com"
+target="_blank">
+
+www.devcloutsystems.com
+
+</a>
+
+
+
+
+<p>
+<strong>
+NextWave:
+</strong>
+</p>
+
+
+<a href="https://www.nextwave.co.zw"
+target="_blank">
+
+www.nextwave.co.zw
+
+</a>
+
+
+
+
+<p>
+<strong>
+GitHub:
+</strong>
+</p>
+
+
+<a href="https://github.com/devCloutKildren"
+target="_blank">
+
+github.com/devCloutKildren
+
+</a>
+
+
+
 
 </div>
 
-            <!-- RIGHT COLUMN -->
-            <div class="social-links">
-                <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
 
-                <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon">
-                    <i class="fab fa-instagram"></i>
-                </a>
 
-                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
 
-                <a href="https://wa.me/263771579251" target="_blank" class="social-icon">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-            </div>
-            <!-- Download CV Button -->
-       <div>
-  <a href="Travor_Chiweshe_CV.pdf" download class="btn download-btn">
-    Download CV
-  </a>
 
-  <a href="Transcript_54264.pdf" download class="btn download-btn">
-    Download Diploma
-  </a>
+
+
+
+
+<div class="social-links">
+
+
+
+<a href="#"
+class="social-icon">
+
+<i class="fab fa-linkedin-in"></i>
+
+</a>
+
+
+
+<a href="#"
+class="social-icon">
+
+<i class="fab fa-github"></i>
+
+</a>
+
+
+
+<a href="https://wa.me/263771579251"
+target="_blank"
+class="social-icon">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+
+
 </div>
 
-        </div>
-    </section>
 
-    <footer>
-        <p>© 2026 Travor Chiweshe. All Rights Reserved.</p>
-    </footer>
+
+
+
+
+
+<div>
+
+
+<a href="Travor_Chiweshe_CV.pdf"
+download
+class="btn download-btn">
+
+Download CV
+
+</a>
+
+
+
+
+<a href="Transcript_54264.pdf"
+download
+class="btn download-btn">
+
+Download Transcript
+
+</a>
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+© 2026 Travor Chiweshe.
+All Rights Reserved.
+
+</p>
+
+
+</footer>
+
+
+
+
 
 </body>
 
+
 </html>
-
-
-
-
-
-
-
-
